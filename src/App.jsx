@@ -7,6 +7,8 @@ import MessageClassifierView from './components/MessageClassifierView';
 import IdentitySentinelView from './components/IdentitySentinelView';
 import AiAssistantView from './components/AiAssistantView';
 import QuizSandboxView from './components/QuizSandboxView';
+import ThreatIntelSuiteView from './components/ThreatIntelSuiteView';
+import AttackSurfaceVendorView from './components/AttackSurfaceVendorView';
 import ReportModal from './components/ReportModal';
 
 export default function App() {
@@ -42,6 +44,14 @@ export default function App() {
             setActiveTab={setActiveTab} 
             onAnalysisComplete={handleAnalysisComplete}
           />
+        )}
+
+        {activeTab === 'threatIntel' && (
+          <ThreatIntelSuiteView />
+        )}
+
+        {activeTab === 'attackSurface' && (
+          <AttackSurfaceVendorView />
         )}
 
         {activeTab === 'url' && (
@@ -84,12 +94,12 @@ export default function App() {
       }}>
         <div className="app-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
           <div>
-            © 2026 <strong style={{ color: 'var(--color-primary)' }}>CYBERSHIELD AI</strong> — Enterprise Intelligent Security Defense Platform
+            © 2026 <strong style={{ color: 'var(--color-primary)' }}>CYBERSHIELD AI</strong> — Enterprise Intelligent Security & Defense Platform
           </div>
           <div style={{ display: 'flex', gap: '16px' }}>
-            <span>Privacy Guard Engine</span>
+            <span>EASM Engine</span>
             <span>Zero-Trust Architecture</span>
-            <span>APWG Phishing Protection Standard</span>
+            <span>APWG & FIRST EPSS Standards</span>
           </div>
         </div>
       </footer>

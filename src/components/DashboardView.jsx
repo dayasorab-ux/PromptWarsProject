@@ -8,6 +8,8 @@ import {
   Mail, 
   KeyRound, 
   Zap, 
+  Flame,
+  Radio,
   CheckCircle2,
   Lock,
   TrendingUp,
@@ -65,16 +67,16 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
               <Cpu size={13} /> INTELLIGENT DEFENSE HUB
             </span>
             <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-              Real-Time AI Phishing & Fraud Analysis
+              Real-Time AI Phishing & Enterprise Risk Suite
             </span>
           </div>
 
           <h1 style={{ fontSize: '2.2rem', fontWeight: 800, lineHeight: 1.25, marginBottom: '14px' }}>
-            Analyze Suspicious URLs, Messages & Identity Risks in <span className="gradient-text">Real-Time</span>
+            Analyze Suspicious URLs, Messages & Enterprise Threat Vectors in <span className="gradient-text">Real-Time</span>
           </h1>
 
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.6, marginBottom: '24px' }}>
-            Paste any link, email body, SMS text, or domain below. CyberShield AI inspects structural anomalies, homographs, urgency manipulation, and credential traps to provide simple actionable recommendations.
+            Paste any link, email body, SMS text, or domain below. CyberShield AI inspects structural anomalies, homographs, urgency manipulation, dark web breaches, and attack surface risks.
           </p>
 
           {/* Quick Input Bar */}
@@ -164,7 +166,7 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
               <ShieldCheck size={22} color="var(--color-safe)" />
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '8px', color: 'var(--color-safe)' }}>
-              99.4%
+              99.8%
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)', marginTop: '4px' }}>
               Optimal Threat Prevention Baseline
@@ -179,7 +181,7 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
               <AlertTriangle size={22} color="var(--color-danger)" />
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '8px', color: 'var(--color-danger)' }}>
-              1,482
+              1,842
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)', marginTop: '4px' }}>
               Deceptive Domains & Smishing Links
@@ -190,14 +192,14 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
         <div className="col-3">
           <div className="glass-card" style={{ padding: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>HOMOGRAPH GLYPH AUDITS</span>
-              <Globe size={22} color="var(--color-primary)" />
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>DARK WEB LEAKS INTERCEPTED</span>
+              <Flame size={22} color="var(--color-primary)" />
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '8px', color: 'var(--color-primary)' }}>
-              342
+              128
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)', marginTop: '4px' }}>
-              Cyrillic & Typosquat Spoofs Intercepted
+              Credentials & Paste Leaks Monitored
             </div>
           </div>
         </div>
@@ -205,14 +207,14 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
         <div className="col-3">
           <div className="glass-card" style={{ padding: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>AI THREAT ASSIST AUDITS</span>
-              <Cpu size={22} color="var(--color-secondary)" />
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>EASM ASSETS SHIELDED</span>
+              <Radio size={22} color="var(--color-secondary)" />
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '8px', color: 'var(--color-secondary)' }}>
-              890+
+              94.2%
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)', marginTop: '4px' }}>
-              Plain-English Guidance Sessions
+              External Attack Surface Inventory
             </div>
           </div>
         </div>
@@ -220,11 +222,11 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
 
       {/* Feature Navigation Modules Grid */}
       <div className="grid-dashboard">
-        {/* Module 1 Card */}
-        <div className="col-4">
+        {/* Threat Intel & Playbooks Card */}
+        <div className="col-6">
           <div 
             className="glass-card glass-card-interactive" 
-            onClick={() => setActiveTab('url')}
+            onClick={() => setActiveTab('threatIntel')}
             style={{ padding: '24px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
           >
             <div>
@@ -239,24 +241,27 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
                 justify: 'center',
                 marginBottom: '16px'
               }}>
-                <Globe size={22} color="var(--color-primary)" />
+                <Flame size={22} color="var(--color-primary)" />
               </div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '8px' }}>URL & Domain Inspector</h3>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '8px' }}>Threat Intelligence & Playbook Suite</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
-                Detects homographs, typosquatting, high-risk TLDs (.tk, .xyz), entropy anomalies, and missing HTTPS encryption.
+                • Dark Web & Paste Leak Monitoring<br />
+                • Geopolitical & Physical Threat Telemetry<br />
+                • Automated YARA / Sigma / Snort Rule Generator<br />
+                • EPSS vs CVSS Real-World Vulnerability Prioritization
               </p>
             </div>
-            <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-primary)', fontSize: '0.85rem', fontWeight: 600 }}>
-              Launch URL Inspector <ArrowRight size={14} />
+            <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-primary)', fontSize: '0.88rem', fontWeight: 700 }}>
+              Launch Threat Intel Suite <ArrowRight size={16} />
             </div>
           </div>
         </div>
 
-        {/* Module 2 Card */}
-        <div className="col-4">
+        {/* Attack Surface & Vendor Risk Card */}
+        <div className="col-6">
           <div 
             className="glass-card glass-card-interactive" 
-            onClick={() => setActiveTab('message')}
+            onClick={() => setActiveTab('attackSurface')}
             style={{ padding: '24px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
           >
             <div>
@@ -264,54 +269,25 @@ export default function DashboardView({ setActiveTab, onAnalysisComplete }) {
                 width: '44px',
                 height: '44px',
                 borderRadius: '12px',
-                background: 'rgba(255, 8, 68, 0.12)',
-                border: '1px solid rgba(255, 8, 68, 0.3)',
+                background: 'rgba(127, 83, 172, 0.15)',
+                border: '1px solid rgba(127, 83, 172, 0.3)',
                 display: 'flex',
                 alignItems: 'center',
                 justify: 'center',
                 marginBottom: '16px'
               }}>
-                <Mail size={22} color="var(--color-danger)" />
+                <Radio size={22} color="var(--color-secondary)" />
               </div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '8px' }}>Scam Message Classifier</h3>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '8px' }}>Attack Surface & Supply Chain Defense</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
-                Classifies SMS, emails, and WhatsApp text for urgency manipulation, parcel traps, crypto giveaways, and OTP theft.
+                • Dynamic External Attack Surface Mapping (EASM)<br />
+                • Adversary Infrastructure & C2 Node Tracking<br />
+                • Brand Protection & Fast Registrar Takedowns<br />
+                • Third-Party Vendor Security Scorecards
               </p>
             </div>
-            <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-danger)', fontSize: '0.85rem', fontWeight: 600 }}>
-              Analyze Message Text <ArrowRight size={14} />
-            </div>
-          </div>
-        </div>
-
-        {/* Module 3 Card */}
-        <div className="col-4">
-          <div 
-            className="glass-card glass-card-interactive" 
-            onClick={() => setActiveTab('sentinel')}
-            style={{ padding: '24px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
-          >
-            <div>
-              <div style={{
-                width: '44px',
-                height: '44px',
-                borderRadius: '12px',
-                background: 'rgba(255, 177, 0, 0.12)',
-                border: '1px solid rgba(255, 177, 0, 0.3)',
-                display: 'flex',
-                alignItems: 'center',
-                justify: 'center',
-                marginBottom: '16px'
-              }}>
-                <KeyRound size={22} color="var(--color-warning)" />
-              </div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '8px' }}>Identity & Breach Sentinel</h3>
-              <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
-                Checks email data breach exposure, audits password entropy, and provides step-by-step identity hardening playbooks.
-              </p>
-            </div>
-            <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-warning)', fontSize: '0.85rem', fontWeight: 600 }}>
-              Audit Identity Safety <ArrowRight size={14} />
+            <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-secondary)', fontSize: '0.88rem', fontWeight: 700 }}>
+              Explore Attack Surface Suite <ArrowRight size={16} />
             </div>
           </div>
         </div>
